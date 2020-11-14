@@ -1,0 +1,24 @@
+syntax = "proto3";
+package caso;
+service Caso {
+  rpc Search (CasoRequest) returns (CasoResponse) {}
+}
+message CasoRequest {
+  string name = "";
+  string location = "";
+  int32 age = 0;
+  string infectedtype = "";
+  string state = "";
+}
+message Currencies {
+  string code = 1;
+  string name = 2;
+  string symbol = 3;
+}
+message CasoResponse {
+  string name = "";
+  string location = "";
+  int32 age = 0;
+  string infectedtype = "";
+  string state = "";
+}
