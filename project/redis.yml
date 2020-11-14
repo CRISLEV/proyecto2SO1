@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mongo:
+    image: redis
+    container_name: redis-b
+    expose:
+      - 6379
+    ports:
+      - "6379:6379"
+    stdin_open: true
+    tty: true
