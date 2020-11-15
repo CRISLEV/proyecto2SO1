@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proy2-pyrabbit
+  namespace: project
+spec:
+  selector:
+    matchLabels:
+      app: pyrabbit
+  template:
+    metadata:
+      labels:
+        app: pyrabbit
+    spec:
+      containers:
+      - name: pyrabbit
+        image: gcr.io/so1-proy2/pyrabbit111:1.0
+        ports:
+        - containerPort: 50052

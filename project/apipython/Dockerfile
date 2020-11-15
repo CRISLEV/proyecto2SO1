@@ -1,8 +1,14 @@
-FROM python 
-WORKDIR /
+FROM python:3
+WORKDIR /main
+
+COPY requirements.txt .
+
 RUN pip install requirements.txt
-COPY . .
-EXPOSE 3000
+RUN pip install grpcio
+RUN pip install grpcio-tools
 
+COPY main/ .
 
-CMD ["npm", "start"]
+EXPOSE 50051
+# command to run on container start
+CMD [ "python", "./server.py" ]
