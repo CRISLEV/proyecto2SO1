@@ -20,7 +20,7 @@ type caso struct {
 }
 
 const (
-	address = "localhost:50051"
+	address = "localhost:5672"
 )
 
 func main() {
