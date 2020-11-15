@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nodeserver
-          image: localhost:2000/nodeserver
+          image: gcr.io/so1-proy2/service-nodejs-grupo6
           imagePullPolicy: Always
           ports:
             - containerPort: 2000
