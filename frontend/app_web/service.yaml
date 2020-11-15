@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: app_web
+  name: aweb
   namespace: frontend
 spec:
   ports:
@@ -9,5 +9,5 @@ spec:
       targetPort: 3000
       protocol: TCP
   selector:
-    app: appweb
+    name: aweb
   type: LoadBalancer
