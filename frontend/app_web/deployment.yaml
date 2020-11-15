@@ -16,6 +16,6 @@ spec:
       containers:
       - name: aweb
         image: us.get.io/so1-proy2/frontdend-appweb-grupo6:1.0
-        imagePullPolicy: IfNotPrsent
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
