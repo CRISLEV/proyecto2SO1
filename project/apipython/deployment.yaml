@@ -1,10 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app_web
+  name: proy2-frontend
   namespace: frontend
 spec:
   replicas: 3
+  type: LoadBalancer
+  linkerd.io/inject: enabled
   selector:
     matchLabels:
       app: proy2

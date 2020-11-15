@@ -36,7 +36,10 @@ func test() {
 
 func main() {
 	grpcServer := grpc.NewServer()
+<<<<<<< HEAD
 
+=======
+>>>>>>> db7e968129ba22a4fed3d4465e85d72ea90923e0
 	listen, err := net.Listen("tcp", "0.0.0.0:3000")
 	if err != nil {
 	  log.Fatalf("could not listen to 0.0.0.0:3000 %v", err)

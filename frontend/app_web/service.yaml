@@ -1,13 +1,17 @@
 kind: Service
 apiVersion: v1
 metadata:
+<<<<<<< HEAD:frontend/app_web/service.yaml
   name: app_web
   namespace: frontend
+=======
+  name: appweb
+>>>>>>> db7e968129ba22a4fed3d4465e85d72ea90923e0:frontend/service.yaml
 spec:
   ports:
     - port: 80
       targetPort: 3000
       protocol: TCP
   selector:
-    app: app_web
-  type: Loadbalancer
+    app: appweb
+  type: LoadBalancer
