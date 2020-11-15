@@ -6,7 +6,6 @@ metadata:
 spec:
   replicas: 1
   type: LoadBalancer
-  linkerd.io/inject: enabled
   selector:
     matchLabels:
       app: nodeserver
