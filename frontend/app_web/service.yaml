@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: app_web
+  namespace: frontend
 spec:
   ports:
     - port: 80

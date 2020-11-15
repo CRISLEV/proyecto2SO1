@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nodeserver
+  namespace: frontend
+spec:
+  ports:
+    - port: 80
+      targetPort: 2000
+      protocol: TCP
+  selector:
+    app: nodeserver
+  type: Loadbalancer

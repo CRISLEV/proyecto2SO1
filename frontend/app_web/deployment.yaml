@@ -2,8 +2,9 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: app_web
+  namespace: frontend
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: app_web

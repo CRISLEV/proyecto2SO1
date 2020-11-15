@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: nodeserver
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeserver
+  template:
+    metadata:
+      labels:
+        app: nodeserver
+    spec:
+      containers:
+        - name: nodeserver
+          image: localhost:2000/nodeserver
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 2000
+      restartPolicy: Always
