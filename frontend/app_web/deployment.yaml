@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gcr.io/so1-proy2/frontend111:1.0
+        image: us.get.io/so1-proy2/frontdend-appweb-grupo6-v:1.0
         ports:
         - containerPort: 3000
