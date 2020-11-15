@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: app_web
+  name: appweb
 spec:
   ports:
     - port: 80
       targetPort: 3000
       protocol: TCP
   selector:
-    app: app_web
-  type: Loadbalancer
+    app: appweb
+  type: LoadBalancer
