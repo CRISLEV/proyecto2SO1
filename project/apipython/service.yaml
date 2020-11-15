@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: proy2-pygrpc
+  namespace: project
+spec:
+  ports:
+    - port: 80
+      targetPort: 50051
+      protocol: TCP
+  selector:
+    name: proy2-pygrpc
